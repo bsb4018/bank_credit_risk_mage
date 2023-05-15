@@ -29,5 +29,10 @@ help_improve_mage: true
 project_uuid: ebda004847014883a034568628b23be6
 
 logging_config:
+  type: s3
   level: INFO
+  destination_config:
+    bucket: bucket-name-here-for-storing-logs
+    prefix: logs
 
+SERVER_VERBOSITY: INFO

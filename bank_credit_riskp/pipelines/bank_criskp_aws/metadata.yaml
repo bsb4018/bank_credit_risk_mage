@@ -37,7 +37,7 @@ blocks:
   has_callback: false
   language: python
   name: model_trainer
-  status: updated
+  status: executed
   type: data_exporter
   upstream_blocks:
   - data_transformer
@@ -45,10 +45,12 @@ blocks:
 callbacks: []
 data_integration: null
 description: null
+executor_config: {}
 executor_count: 1
+executor_type: null
 extensions: {}
 name: bank_criskp_aws
 type: python
-updated_at: '2023-05-15 08:46:44'
+updated_at: '2023-05-15 14:38:49'
 uuid: bank_criskp_aws
 widgets: []

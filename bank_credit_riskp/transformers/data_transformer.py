@@ -24,20 +24,21 @@ def transform(df, *args, **kwargs):
         Anything (e.g. data frame, dictionary, array, int, str, etc.)
     """
     # Specify your transformation logic here
+    
     df = df.rename(columns={'laufkont': 'status', 'laufzeit':'duration','moral': 'credit_history', 'verw':'purpose',\
                                     'hoehe': 'amount', 'sparkont':'savings','beszeit': 'employment_duration', 'rate':'installment_rate',\
                                         'famges': 'personal_status_sex', 'buerge':'other_debtors','wohnzeit': 'present_residence', \
                                             'verm':'property','alter': 'age', 'weitkred':'other_installment_plans',\
                                                 'wohn': 'housing', 'bishkred':'number_credits','beruf': 'job', 'pers':'people_liable',\
                                                     'telef': 'telephone','gastarb':'foreign_worker','kredit': 'credit_risk'})
-    
+   
     simple_imputer_obj = SimpleImputer(strategy='most_frequent')
     simple_imputer_obj_fitted = simple_imputer_obj.fit(df)
 
     idf = pd.DataFrame(simple_imputer_obj_fitted.transform(df))
     idf.columns=df.columns
     idf.index=df.index
-    
+
     return df
 
 

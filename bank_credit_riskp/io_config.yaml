@@ -4,5 +4,5 @@ default:
   # Add your credentials for the source you use, and delete the rest.
   AWS_ACCESS_KEY_ID: "{{ env_var('AWS_ACCESS_KEY_ID') }}"
   AWS_SECRET_ACCESS_KEY: "{{ env_var('AWS_SECRET_ACCESS_KEY') }}"
-  AWS_REGION: ap-south-1
+  AWS_REGION: "{{ env_var('AWS_SECRET_ACCESS_KEY') }}"
   

@@ -86,4 +86,11 @@ notebooks/
 .terraform.lock.hcl
 
 ~
-bank_credit_riskp
+artifacts
+bank_credit_riskp/.file_versions
+bank_credit_riskp/charts
+bank_credit_riskp/custom
+bank_credit_riskp/dbt
+bank_credit_riskp/extensions
+bank_credit_riskp/scratchpads
+bank_credit_riskp/utils

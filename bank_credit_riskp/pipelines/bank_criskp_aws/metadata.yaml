@@ -1,0 +1,54 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - data_transformer
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: load_data_s3
+  status: executed
+  type: data_loader
+  upstream_blocks: []
+  uuid: load_data_s3
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - model_trainer
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: data_transformer
+  status: executed
+  type: transformer
+  upstream_blocks:
+  - load_data_s3
+  uuid: data_transformer
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: model_trainer
+  status: updated
+  type: data_exporter
+  upstream_blocks:
+  - data_transformer
+  uuid: model_trainer
+callbacks: []
+data_integration: null
+description: null
+executor_count: 1
+extensions: {}
+name: bank_criskp_aws
+type: python
+updated_at: '2023-05-15 08:46:44'
+uuid: bank_criskp_aws
+widgets: []

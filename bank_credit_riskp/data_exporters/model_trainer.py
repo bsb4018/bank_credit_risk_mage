@@ -111,6 +111,7 @@ def export_data(df, *args, **kwargs):
     pickle.dump(model, open(model_filename, 'wb'))
 
 
+
     print(f'Saving model report')
     model_report = {"f1_score" : f1 , "accuracy" : accuracy}
     model_report_filename = f'{cwd}/artifacts/model/model_report.json'
@@ -119,6 +120,8 @@ def export_data(df, *args, **kwargs):
     jsonFile.write(jsonString)
     jsonFile.close()
 
+
+    #Export this part to AWS S3 Bucket
     print(f'Saving training and test set')
     X_train.to_csv(f'{cwd}/artifacts/data_split/X_train.csv', index = False)
     X_test.to_csv(f'{cwd}/artifacts/data_split/X_test.csv', index = False)

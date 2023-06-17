@@ -20,9 +20,6 @@ Before we run the project, make sure that you are having Python installed and co
 ## Project Architecture
 ![image](https://github.com/bsb4018/bank_credit_risk_mage/blob/main/assets/file_structure-pipeline.png)
 
-## Project Pipeline
-![image](https://github.com/bsb4018/bank_credit_risk_mage/blob/main/assets/pipeline_tree.png)
-
 
 ### Step 1: Clone the repository
 ```bash

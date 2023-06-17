@@ -7,7 +7,7 @@ Build a model to predict whether the person, described by the attributes of the 
 
 Link to Dataset : https://archive.ics.uci.edu/ml/datasets/South+German+Credit
 ### Solution Proposed 
-The solution model trains a Gradient Boosting Classifier model to classify if a person is a crdit risk or not.
+The solution model trains a Gradient Boosting Classifier model to classify if a person is a credit risk or not.
 ## Tools Stack Used
 1. Mage AI
 2. AWS

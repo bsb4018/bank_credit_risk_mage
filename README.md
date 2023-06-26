@@ -75,6 +75,8 @@ Create a bucket to store logs and inside the bucket create a folder named logs
 Put the bucket name in bank_credit_riskp/metadata.yaml  logging_config: -> destination_config: -> bucket:
 
 ### Step 10 - Create artifacts folder to store model artifacts locally
+
+
 Create a folder named "artifacts" in the same lcoation as the repository and two sub folders named "model" and "data-split" 
 
 
